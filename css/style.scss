@@ -11,6 +11,10 @@ a {
   text-decoration: none;
 }
 
+img {
+  display: block;
+}
+
 body {
   font-family: "Poppins", sans-serif;
   background-color: var(--secondary);
@@ -25,7 +29,7 @@ body {
 }
 
 .container {
-  max-width: 1600px;
+  max-width: 1600px; //?????????????
   padding-left: 15px;
   padding-right: 16px;
   margin: 0 auto;
@@ -66,7 +70,7 @@ body {
 // ---- hero
 .hero {
   position: relative;
-  max-width: 1920px;
+  max-width: 1920px; //???????????????
   margin: 0 auto;
 }
 
@@ -76,8 +80,6 @@ body {
   top: 0;
   height: 100%;
   z-index: -1;
-
-  outline: 1px solid red;
 }
 
 .thumbs {
@@ -85,8 +87,6 @@ body {
   overflow: hidden;
   width: 808px;
   height: 100%;
-
-  outline: 1px solid red;
 }
 
 .thumbs__img {
@@ -96,8 +96,6 @@ body {
 
   transform: translate(-50%, -50%);
   object-fit: cover;
-
-  outline: 1px solid red;
 }
 
 .hero__info {
@@ -130,19 +128,19 @@ body {
 .hero__link::after {
   content: "";
   display: block;
-  border-image: url(../img/arrow/swg);
+  background-image: url(../img/svg/arrow-right.svg);
   background-size: cover;
-  width: 48px;
-  height: 48px;
+  width: 36px;
+  height: 36px;
 
   position: absolute;
   right: 21px;
-  top: calc(50% - 24px);
+  top: calc(50% - 18px);
 }
 // -----------services
 .hero__services {
   background-color: var(--light); //repeat
-  max-width: 1200px;
+  max-width: 1200px; //???????????
   margin-top: 80px;
 }
 
@@ -170,6 +168,21 @@ body {
   flex-basis: 328px;
 }
 
+.services__col .thumb {
+  position: relative;
+  background-color: var(--primary);
+  height: 64px;
+  width: 64px;
+  border-radius: 50%;
+}
+.services__col .thumb img {
+  position: absolute;
+  width: 54px;
+  height: 54px;
+  left: -6px;
+  top: 6px;
+}
+
 .sevices__title {
   font-size: 18px;
   font-weight: 700; //maybe in agent
@@ -182,7 +195,7 @@ body {
 
 // ---------feedback
 .feedback {
-  padding-top: 82px;
+  // padding-top: 82px;
   padding-bottom: 98px;
 }
 
@@ -220,11 +233,21 @@ body {
   background-color: var(--primary);
 }
 
+.feedback .thumb {
+  border-radius: 50%;
+  overflow: hidden;
+}
+
 .title {
   font-weight: 600;
   font-size: 35px;
   color: #fff;
   margin: 0;
+}
+
+[alt="Quote"] {
+  width: 48px;
+  height: 48px;
 }
 
 .swiper-button-prev,
@@ -260,7 +283,7 @@ body {
 
 .swiper-button-prev:hover path,
 .swiper-button-next:hover path {
-  background-color: var(--dark);
+  stroke: var(--dark); // background-color: var(--dark);
 }
 
 .swiper-slide {

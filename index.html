@@ -21,18 +21,18 @@
     <script src="js/index.js" defer></script>
   </head>
   <body>
-    <section class="hero" >
+    <section class="hero">
       <div class="hero__thumbs">
         <div class="thumbs">
-          <!-- no native img & too small 4 project -->
           <img src="img/bg.jpg" alt="Background" class="thumbs__img" />
         </div>
       </div>
+
       <header>
         <div class="container">
           <div class="header">
             <a href="#" class="header__logo">
-              <img src="img/logo.svg" alt="Logo" />
+              <img src="img/logo.png" alt="Logo" />
             </a>
 
             <nav class="header__nav">
@@ -65,7 +65,9 @@
         <div class="hero__services">
           <div class="services">
             <div class="services__col">
-              <img src="img/web-design.svg" alt="web Design" />
+              <div class="thumb">
+                <img src="img/svg/d-art-work.svg " alt="Web Design" />
+              </div>
               <h2 class="services__title">Web Design Projects</h2>
               <p class="services__text">
                 Make your website user friendly and look more professional
@@ -73,7 +75,9 @@
             </div>
 
             <div class="services__col">
-              <img src="img/social-media.svg" alt="Social Media" />
+              <div class="thumb">
+                <img src="img/svg/socials.svg" alt="Social Media" />
+              </div>
               <h2 class="services__title">Social Media Templates</h2>
               <p class="services__text">
                 Gain more followers or subscribers with the right template
@@ -81,7 +85,9 @@
             </div>
 
             <div class="services__col">
-              <img src="img/web-design.svg" alt="web Design" />
+              <div class="thumb">
+                <img src="img/svg/web-dev.svg" alt="web Design" />
+              </div>
               <h2 class="services__title">Digital Artwork</h2>
               <p class="services__text">
                 Complete your digital work with appropriate artwork
@@ -100,8 +106,54 @@
             <h2 class="title">What Our Customer Say</h2>
           </div>
           <div class="heading__right">
-            <div class="swiper-button-next"></div>
-            <div class="swiper-button-prev"></div>
+            <div class="swiper-button-prev">
+              <svg
+                width="18"
+                height="10"
+                viewBox="0 0 18 10"
+                fill="none"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <g clip-path="url(#clip0_4_1870)">
+                  <path
+                    d="M0.575701 4.5757C0.341401 4.81001 0.341401 5.18991 0.575701 5.42422L4.3941 9.2426C4.6284 9.47691 5.0083 9.47691 5.2426 9.2426C5.477 9.00828 5.477 8.62839 5.2426 8.39407L1.8485 4.99996L5.2426 1.60585C5.477 1.37153 5.477 0.991628 5.2426 0.757317C5.0083 0.522998 4.6284 0.522998 4.3941 0.757317L0.575701 4.5757ZM18 4.39996L1 4.39996L1 5.59996L18 5.59996L18 4.39996Z"
+                    fill="black"
+                  />
+                </g>
+                <defs>
+                  <clipPath id="clip0_4_1870">
+                    <rect
+                      width="18"
+                      height="10"
+                      fill="white"
+                      transform="translate(18 10) rotate(-180)"
+                    />
+                  </clipPath>
+                </defs>
+              </svg>
+            </div>
+
+            <div class="swiper-button-next">
+              <svg
+                width="18"
+                height="10"
+                viewBox="0 0 18 10"
+                fill="none"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <g clip-path="url(#clip0_4_1872)">
+                  <path
+                    d="M17.4243 5.4243C17.6586 5.18999 17.6586 4.81009 17.4243 4.57578L13.6059 0.757401C13.3716 0.523087 12.9917 0.523087 12.7574 0.757401C12.523 0.991716 12.523 1.37161 12.7574 1.60593L16.1515 5.00004L12.7574 8.39415C12.523 8.62847 12.523 9.00837 12.7574 9.24268C12.9917 9.477 13.3716 9.477 13.6059 9.24268L17.4243 5.4243ZM0 5.60004H17V4.40004H0V5.60004Z"
+                    fill="black"
+                  />
+                </g>
+                <defs>
+                  <clipPath id="clip0_4_1872">
+                    <rect width="18" height="10" fill="white" />
+                  </clipPath>
+                </defs>
+              </svg>
+            </div>
           </div>
         </div>
         <!-- <div class="swiper swiperFeedback"> -->
@@ -109,13 +161,15 @@
           <div class="swiper-wrapper">
             <div class="swiper-slide">
               <div class="swiper-slide__head">
-                <img src="img/user1.png" alt="User1.name" />
+                <div class="thumb">
+                  <img src="img/user1.jpg" alt="User1" />
+                </div>
 
                 <div class="swiper-slide__info">
                   <p class="swiper-slide__author">Kathleen Smith</p>
                   <p class="swiper-slide__role">Fuel Company</p>
                 </div>
-                <img src="img/quote.svg" alt="Quote" />
+                <img src="img/svg/quote.svg" alt="Quote" />
               </div>
               <div class="swiper-slide__text">
                 Lorem ipsum dolor, sit amet consectetur adipisicing elit.
@@ -127,12 +181,16 @@
 
             <div class="swiper-slide">
               <div class="swiper-slide__head">
-                <img src="img/user2.png" alt="User1.name" />
+                <div class="thumb">
+                  <img src="img/user2.jpg" alt="User2" />
+                </div>
+
                 <div class="swiper-slide__info">
                   <p class="swiper-slide__author">Kathleen Smith</p>
                   <p class="swiper-slide__role">Fuel Company</p>
                 </div>
-                <img src="img/quote.svg" alt="Quote" />
+
+                <img src="img/svg/quote.svg" alt="Quote" />
               </div>
               <div class="swiper-slide__text">
                 Lorem ipsum dolor, sit amet consectetur adipisicing elit.
@@ -145,9 +203,49 @@
               </div>
             </div>
 
-            <div class="swiper-slide">Slide 3</div>
+            <div class="swiper-slide">
+              <div class="swiper-slide__head">
+                <div class="thumb">
+                  <img src="img/user1.jpg" alt="User1" />
+                </div>
 
-            <div class="swiper-slide">Slide 4</div>
+                <div class="swiper-slide__info">
+                  <p class="swiper-slide__author">Kathleen Smith</p>
+                  <p class="swiper-slide__role">Fuel Company</p>
+                </div>
+                <img src="img/svg/quote.svg" alt="Quote" />
+              </div>
+              <div class="swiper-slide__text">
+                Lorem ipsum dolor, sit amet consectetur adipisicing elit.
+                Veritatis ipsa rerum vero nemo quibusdam laborum repudiandae
+                porro. Vero, ipsam? Nisi repellat, deleniti fuga porro sed in
+                est repellendus nulla labore!
+              </div>
+            </div>
+
+            <div class="swiper-slide">
+              <div class="swiper-slide__head">
+                <div class="thumb">
+                  <img src="img/user2.jpg" alt="User2" />
+                </div>
+
+                <div class="swiper-slide__info">
+                  <p class="swiper-slide__author">Kathleen Smith</p>
+                  <p class="swiper-slide__role">Fuel Company</p>
+                </div>
+
+                <img src="img/svg/quote.svg" alt="Quote" />
+              </div>
+              <div class="swiper-slide__text">
+                Lorem ipsum dolor, sit amet consectetur adipisicing elit.
+                Veritatis ipsa rerum vero nemo quibusdam laborum repudiandae
+                porro. Vero, ipsam? Nisi repellat, deleniti fuga porro sed in
+                est repellendus nulla labore!
+                <br /><br />
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Labore
+                quod molestias, repudiandae dolores vel dolor!
+              </div>
+            </div>
           </div>
         </div>
       </div>
